@@ -39,8 +39,7 @@ return {
     }
   },
   {
-    'echasnovski/mini.diff',
-    version = '*',
+    'lewis6991/gitsigns.nvim',
     opts = {}
   },
   {
@@ -74,16 +73,6 @@ return {
     "ibhagwan/fzf-lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {}
-  },
-  {
-    'petertriho/nvim-scrollbar',
-    opts = {
-      marks = {
-        Cursor = {
-          text = ""
-        },
-      },
-    }
   },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -133,10 +122,6 @@ return {
       vim.api.nvim_set_hl(0, "IblIndent", { bold = true })
       require("ibl").setup()
     end,
-  },
-  {
-    "j-hui/fidget.nvim",
-    opts = {}
   },
   {
     "windwp/nvim-ts-autotag",

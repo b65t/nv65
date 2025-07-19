@@ -86,5 +86,21 @@ return {
         background = true,
       },
     }
+  },
+  -- scroll bar
+  {
+    'petertriho/nvim-scrollbar',
+    opts = {
+      marks = {
+        Cursor = {
+          text = ""
+        },
+      },
+    }
+  },
+  -- notifications
+  {
+    "j-hui/fidget.nvim",
+    opts = {}
   }
 }
