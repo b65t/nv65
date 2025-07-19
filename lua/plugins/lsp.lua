@@ -16,7 +16,8 @@ return {
           "bashls",
           "tailwindcss",
           "html",
-          "ts_ls"
+          "ts_ls",
+          "jsonls"
         }
       })
     end
@@ -46,6 +47,9 @@ return {
 	capabilities = capabilities
       })
       lspconfig.ts_ls.setup({
+	capabilities = capabilities
+      })
+      lspconfig.jsonls.setup({
 	capabilities = capabilities
       })
    end

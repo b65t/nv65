@@ -91,7 +91,7 @@ return {
     lazy = false,
     build = ":TSUpdate",
     opts = {
-      ensure_installed = { "norg", "html" },
+      ensure_installed = { "norg", "html", "javascript" },
       sync_install = false,
       auto_install = true,
       highlight = {
