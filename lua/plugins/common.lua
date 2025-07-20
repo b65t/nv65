@@ -75,40 +75,6 @@ return {
     opts = {}
   },
   {
-    "nvim-treesitter/nvim-treesitter",
-    branch = 'master',
-    lazy = false,
-    build = ":TSUpdate",
-    opts = {
-      ensure_installed = { "norg", "html", "javascript" },
-      sync_install = false,
-      auto_install = true,
-      highlight = {
-        enable = true
-      },
-    },
-  },
-  {
-    "nvim-neorg/neorg",
-    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
-    version = "v7.0.0",
-    dependencies = {"nvim-lua/plenary.nvim"},
-    opts = {
-      load = {
-        ["core.defaults"] = {},
-        ["core.concealer"] = {},
-        ["core.dirman"] = {
-          config = {
-            workspaces = {
-              notes = "~/notes"
-            }
-          }
-        },
-        ["core.qol.todo_items"] = {}
-      }
-    }
-  },
-  {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     event = { "BufReadPre", "BufNewFile" },
@@ -127,9 +93,4 @@ return {
     "windwp/nvim-ts-autotag",
     opts = {}
   }
-  -- {
-    -- 'vyfor/cord.nvim',
-    -- build = ':Cord update',
-    -- opts = {}
-  -- }
 }
