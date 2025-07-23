@@ -47,6 +47,7 @@ return {
         exclude_name = {'package.json'},
       },
       maximum_padding = 0,
+      separator_at_end = false,
       sidebar_filetypes = {
         NvimTree = true,
       }
